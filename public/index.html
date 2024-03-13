@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Add custom styles here */
+    .sidebar {
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+    }
+    .sidebar-heading {
+      padding: 10px;
+    }
+    .nav-link {
+      color: #fff;
+    }
+    .nav-link:hover {
+      color: #ccc;
+    }
+    .sidebar .nav-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .sidebar .nav-divider {
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    .user-profile {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .user-profile .user-avatar {
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .user-profile .user-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .user-name {
+      position: absolute;
+      top: 17px;
+      right: 60px;
+    }
+
+    .overview {
+      position: absolute;
+      top: 17px;
+      right: 1250px;
+      font-size: 20px;
+    }
+
+    .card-subtitle {
+      font-size: 60px; /* Increase subtitle size */
+    }
+    .card-title {
+      color: gray;
+      font-size: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-light">
+            
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-globe mr-2"></i>Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-ticket-alt mr-2"></i>Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-video mr-2"></i>Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-address-book mr-2"></i>Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user-tie mr-2"></i>Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-newspaper mr-2"></i>Articles</a>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-cogs mr-2"></i>Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-newspaper mr-2"></i>Subscription</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+        <!-- Your content goes here -->
+        <header class="jumbotron jumbotron-fluid text-center bg-light">
+          <div class="container">
+
+            <div class="container-fluid">
+              <div class="row">
+                
+                <div class="col-md-3">
+                  <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Unresolved</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">60</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Overdue</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">16</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Open</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">43</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">On hold</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">64</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+
+
+            
+          </div>
+        </header>
+        <div>
+          <span class="user-name">Keith Lun</span>
+        </div>
+        <div>
+          <span class="overview">Overview</span>
+        </div>
+
+        <div class="user-profile">
+          
+          <div class="user-avatar">
+            <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Avatar">
+          <!-- </div>
+          <span class="text-light">John Doe</span>
+        </div> -->
+        
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-light text-center py-3">
+    <div class="container">
+      <span>&copy; 2024 Overview Website. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
